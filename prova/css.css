@@ -1,0 +1,150 @@
+body{
+    display: flex;
+    background-color: #494949;
+}
+.navegador-sup{
+    border: none;
+    color: gray;
+    background-color:  rgb(255, 228, 255);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    width: 80vw;
+    height: 100;
+}
+/* Estilo para os botões de menu */
+.menu-botão, .dropdown-botão,.menu-botão2{
+    min-width: 210px;
+    background-color: #fdd7f5;
+    color: gray;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 8px ;
+    box-shadow: 3px 7px 5px;
+    transition: transform 400ms, box-shadow 400ms;
+}
+.dropdown-botão:hover{
+    color:#ececec;
+    background-color: #8d8d8d;
+}
+.menu-botão:hover{
+    color:#ececec;
+    background-color: #8d8d8d;
+}
+.menu-botão2:hover{
+    color:#ececec;
+    background-color: #8d8d8d;
+}
+
+
+/* Estilo para a lista de menu dropdown */
+.dropdown-menu {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    color: rgb(173, 173, 173);
+    box-shadow: 3px 7px 5px ;
+    transition: transform 400ms, box-shadow 400ms;
+    min-width: 210px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 220px;
+    height: 100;
+    background-color: #fdd7f5;
+}
+
+/* Estilo para os itens do menu dropdown */
+.dropdown-menu li {
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 3px 7px 5px ;
+    transition: transform 400ms, box-shadow 400ms;
+}
+
+/* Estilo para mostrar o menu dropdown quando o botão do meio é clicado */
+.dropdown-botão:hover +.dropdown-menu {
+    display: block;
+}
+
+/*
+navegador lateral
+*/
+
+.nav-lateral {
+    width: 10vw; /* Largura em unidades de viewport (vw) */
+    height: 1200px; /* Altura em pixels */
+    background-color:#eea0dd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Estilo para os botões de navegação */
+.nav-botão {
+    width: 100%; /* Os botões ocupam toda a largura da barra lateral */
+    padding: 20px;
+    text-align: center;
+    color:#333;
+    background-color: #fdd7f5;
+    border: none;
+
+}
+
+/* Estilo para hover nos botões */
+.nav-botão:hover {
+    color:#ececec;
+    background-color: #8d8d8d;
+}
+
+/* CONTEUDO */
+.imagem .img{
+    max-width:200px;
+    max-height:150px;
+}
+
+.conteudo {
+    width: 80vw;
+    height: 1200px;
+    margin: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 228, 255);
+    border-radius: 8px ;
+}
+
+.conteudo .loading {
+    width: 130px; /* tamanho*/
+    height: 130px; /* tamanho*/
+    border: 8px solid #dddddd; /* cor do circulo */
+    border-bottom-color: #da03ab; /* cor da parte que rotaciona */
+    border-radius: 50%; /* definir a borda do loading, para que ele ficar em formato de circulo*/
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite; /* rotação completa em 1 seg e carrega infinitamente*/
+    }
+
+    @keyframes rotation { /*quantos graus ele gira*/
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+    
+    
